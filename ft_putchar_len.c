@@ -1,6 +1,7 @@
 #include "ft_printf.h"
 
-void	ft_putchar_len(int c, size_t *len)
+size_t	ft_putchar_len(int c)
 {
-	len += write(1, &c, 1);
+	write(1, &c, 1);
+	return (1);
 }
